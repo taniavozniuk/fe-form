@@ -1,16 +1,53 @@
-# React + Vite
+# Frontend Engineer Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Frontend Engineer registration form built with React, TypeScript, and Material UI (MUI). The form demonstrates form validation, dynamic field dependencies, and handling of multiple selections using hooks.
 
-Currently, two official plugins are available:
+The FE Version field is disabled by default and becomes active once a framework is selected.
+Email validation is done on submit, and a specific email (test@test.test) is rejected to simulate a server response.
+Hobbies field allows multiple selections, and at least one hobby must be selected.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Reactive form using React hooks
+- Material UI components for modern styling
+- Validation for all required fields
+- Dynamic FE version field enabled only after selecting a framework
+- Multiple hobbies selection with validation
+- Email uniqueness check (simulated server call for test@test.test)
+- Form submission logs JSON data to the console
+- Clear form functionality resets all fields and errors
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Form Fields
 
-## Expanding the ESLint configuration
+1. Name – Required
+2. Last Name – Required
+3. Date of Birth – Required, uses MUI DatePicker
+4. FE Technology – Required, select from Angular, React, Vue
+5. FE Technology Version – Required, dependent on FE Technology selection
+6. Email – Required, must be valid, test@test.test triggers an error
+7. Hobbies – Required, allows multiple selections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/taniavozniuk/fe-form.git
+cd fe-form
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the project:
+
+```bash
+npm run dev
+# or
+yarn run dev
+```
