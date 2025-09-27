@@ -1,0 +1,1 @@
+body{background-color:#f4e9e9}.form{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);box-shadow:0 4px 30px #0000001a;width:400px;border-radius:30px;padding:20px;display:flex;flex-direction:column;gap:16px}.control{display:flex;flex-direction:column;gap:16px}.button{display:flex;justify-content:space-between;gap:8px}
