@@ -6,6 +6,8 @@ The FE Version field is disabled by default and becomes active once a framework 
 Email validation is done on submit, and a specific email (test@test.test) is rejected to simulate a server response.
 Hobbies field allows multiple selections, and at least one hobby must be selected.
 
+[Demo](https://taniavozniuk.github.io/fe-form/)
+
 ## Features
 
 - Reactive form using React hooks
@@ -13,7 +15,7 @@ Hobbies field allows multiple selections, and at least one hobby must be selecte
 - Validation for all required fields
 - Dynamic FE version field enabled only after selecting a framework
 - Multiple hobbies selection with validation
-- Email uniqueness check (simulated server call for test@test.test)
+- Email uniqueness check
 - Form submission logs JSON data to the console
 - Clear form functionality resets all fields and errors
 
@@ -24,7 +26,7 @@ Hobbies field allows multiple selections, and at least one hobby must be selecte
 3. Date of Birth – Required, uses MUI DatePicker
 4. FE Technology – Required, select from Angular, React, Vue
 5. FE Technology Version – Required, dependent on FE Technology selection
-6. Email – Required, must be valid, test@test.test triggers an error
+6. Email – Required, must be valid
 7. Hobbies – Required, allows multiple selections
 
 ## Installation
